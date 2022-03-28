@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pokedexUWU</title>
+    <link rel='stylesheet'  href='./styles.css'>
+</head>
+<body>
+    <div class="poke-card">
+    <h1>  pokedex </h1>
+    <br>
+    <div class="inp">
+    <input  type="text" placeholder="Quien es ese pokemon" id="pokeName" name="pokeName"><br>
+    </div>
+    
+    <img class="poke-img" src="./pokeball.png" alt="pokemon" id="pokeImg" >
+    
+    <div>
+        <h2>pokemon</h2>
+        <div class="container"> <textarea
+            
+            
+            type="text"
+            id="pokeNombre"
+            name="pokeNombre"
+            value=""
+          ></textarea>
+        </div>
+    </div>
+
+    <div>
+        <h3>Caracteristicas</h3>
+        <div>
+            <p id="pokeId"></p>
+            <h4>ID</h4>
+        </div>
+        <div>
+            <p id="pokeAlt"></p>
+            <h4>Altura</h4>
+        </div>
+        <div>
+            <p id="pokePes"></p>
+            <h4>Peso</h4>
+        </div>
+        
+    </div>
+
+        <h3>Estadisticas</h3>
+        <div>
+            <div>
+                <p id="pokeVida"></p>
+                <h4>HP</h4>
+            </div>
+        </div>
+        <div>
+            <div>
+                <p id="pokeAtk"></p>
+                <h4>ATK</h4>
+            </div>
+            <div>
+                <div>
+                    <p id="pokeDef"></p>
+                    <h4>DEF</h4>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p id="pokeVel"></p>
+                    <h4>Speed</h4>
+                </div>
+            </div>
+            <!-- <h3>Movimientos</h3>
+            <div id="pokeMov">
+                <ul>
+
+                </ul>
+            </div> -->
+        </div>
+
+    
+        <button class="button" onclick="fetchPokemon()">Buscar</button>
+    </div>
+</body>
+<footer>
+    <script src ="./PokedexProyect.js"></script>
+</footer>
+</html>
